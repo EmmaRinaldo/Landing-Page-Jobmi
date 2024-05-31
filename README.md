@@ -1,2 +1,2 @@
-# Landing Page Maia
+# Landing Page Maïa
  
