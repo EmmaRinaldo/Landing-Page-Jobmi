@@ -14,10 +14,16 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
   })
   .then(response => response.json())
   .then(data => {
-      document.getElementById('message').innerText = data.message;
+      var messageElement = document.getElementById('message');
+      if (messageElement) {
+          messageElement.innerText = data.message;
+      }
   })
   .catch(error => {
       console.error('Erreur:', error);
-      document.getElementById('message').innerText = 'Une erreur est survenue. Veuillez réessayer.';
+      var messageElement = document.getElementById('message');
+      if (messageElement) {
+          messageElement.innerText = 'Une erreur est survenue. Veuillez réessayer.';
+      }
   });
 });
