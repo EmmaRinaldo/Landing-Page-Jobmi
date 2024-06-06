@@ -3,6 +3,7 @@ import React from 'react';
 
 function Menu() {
     return (
+
         <div className="flex">
             <input type="checkbox" id="drawer-top" className="drawer-toggle" />
 

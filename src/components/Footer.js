@@ -11,7 +11,7 @@ function Footer() {
                         <p className="text-white font-semibold text-start">CONTACT</p>
                         <div className="divider"></div>
                         <p className="text-white text-start">12 rue odesa 78900</p>
-                        <p className="text-white text-start">maia.agencypro@gmail.com</p>
+                        <p className="text-white text-start">maïa.agencypro@gmail.com</p>
                         <p className="text-white text-start">Tel. 01 12 34 57 60</p>
                     </div>
 
