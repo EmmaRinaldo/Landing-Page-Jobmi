@@ -9,8 +9,8 @@ function Hero() {
             <div className="hidden sm:flex w-full bg-cover bg-center rounded-bottom-3xl overflow-hidden h-screen" style={{backgroundImage : 'url(' + backgroundPc + ')'}}>
                 <div className="flex flex-col justify-end p-20 gap-5">
                     <div className="flex flex-col items-start justify-start leading-10">
-                        <p className="text-white font-semibold text-[5rem] mb-12 drop-shadow-lg">Votre metier de</p>
-                        <p className="text-white font-crusivefont mb-12 text-[10rem] drop-shadow-lg">demain</p>
+                        <p className="text-white font-semibold text-[5rem] mb-6 drop-shadow-lg">Votre metier de</p>
+                        <p className="text-white font-crusivefont mb-12 text-[15rem] drop-shadow-lg">demain</p>
                     </div>
                     <p className="w-2/3 text-start text-white font-semibold drop-shadow-lg">Vous ne savez pas quel métier est fait pour vous ? Découvrez le en répondant à 5 questions.</p>
                     <a href="#" className="flex flex-row gap-4 items-center justify-center bg-white hover:bg-secondary hover:text-white transition-all py-3 px-5 w-max rounded-3xl">
