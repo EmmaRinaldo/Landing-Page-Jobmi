@@ -5,8 +5,8 @@ import backgroundPc from '../images/backgroundPc.png';
 
 function Hero() {
     return (
-        <div className="flex">
-            <div className="hidden sm:flex w-full bg-cover bg-center rounded-bottom-3xl overflow-hidden h-screen" style={{backgroundImage : 'url(' + backgroundPc + ')'}}>
+        <div className="flex flex-col h-[110vh]">
+            <div className="hidden sm:flex w-full bg-cover bg-center overflow-hidden h-full rounded-bl-[9rem] rounded-br-[10rem]" style={{ backgroundImage: `url(${backgroundPc})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="flex flex-col justify-end p-20 gap-5">
                     <div className="flex flex-col items-start justify-start leading-10">
                         <p className="text-white font-semibold text-[5rem] mb-6 drop-shadow-lg">Votre metier de</p>
@@ -19,8 +19,8 @@ function Hero() {
                     </a>
                 </div>
             </div>
-            <div className="flex sm:hidden bg-white p-0 sm:h-screen">
-                <img src={ background } alt="Hero Image" className="sm:h-screen w-full object-cover m-0 rounded-b-3xl" />
+            <div className="flex sm:hidden bg-white p-0 h-full rounded-bl-[8rem] rounded-br-[8rem]">
+                <img src={background} alt="Hero Image" className="h-full w-full object-cover m-0 rounded-bl-[8rem] rounded-br-[8rem]" />
             </div>
         </div>
     );
