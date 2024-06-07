@@ -22,7 +22,7 @@ function BottomCard() {
                 </div>
             </div>
 
-            <div className="flex flex-col bg-[#6500FF] h-[50vh] sm:h-[80vh] sm:w-1/2 m-5 px-10 py-20 box-border rounded-3xl items-end justify-end bg-cover bg-center bg-no-repeat" style={{backgroundImage : 'url(' + cardBottomBottomImage + ')'}}>
+            <div className="flex flex-col bg-purple-900 h-[50vh] sm:h-[80vh] sm:w-1/2 m-5 px-10 py-20 box-border rounded-3xl items-end justify-end bg-cover bg-center bg-no-repeat" style={{backgroundImage : 'url(' + cardBottomBottomImage + ')'}}>
                 <p className="text-white text-3xl sm:text-[4rem] leading-tight font-semibold text-start underline">Jetez un oeil à l'actualité</p>
                 <img className="hidden sm:block w-[20rem] absolute left-10 translate-y-[15rem] drop-shadow-md" src={ cardBottomBottomVector } alt="Vector 2" />
             </div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 function Card({ title, description, image, link }) {
     return (
-        <div className="flex flex-col h-[70vh] sm:h-[80vh] overflow-hidden rounded-2xl m-5 bg-no-repeat bg-cover bg-center" style={{backgroundImage : 'url(' + image + ')'}}>
+        <div className="flex flex-col h-[70vh] sm:h-[80vh] rounded-2xl m-2 bg-no-repeat bg-cover bg-center min-w-96 sm:w-1/3" style={{backgroundImage : 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(' + image + ')'}}>
             <div className="flex h-full w-full justify-end p-10">
                 <div className="flex flex-col">
                     <div className="flex h-10 w-10 bg-white rounded-full"></div>
