@@ -1,20 +1,20 @@
-// src/components/Header.js
-import React from 'react';
-import vector1 from '../images/vector1.png';
+import React from "react";
 
 function Header() {
-    return (
-        <div className="flex flex-col gap-10 px-5 py-20 sm:py-[10rem]">
-            <img src={ vector1 } alt="Vector 1" className="w-[10rem] absolute left-1/2 mt-20" />
-            <h1 className="text-5xl sm:text-[5rem] sm:w-2/3 font-bold text-start font-Arimo">DEVENEZ L'UN 3 MILLIONS</h1>
-            <h1 className="text-5xl sm:text-[5rem] sm:self-end sm:w-2/3 font-bold text-end font-Arimo">DE RECRUTÉS</h1>
-
-            <div className="flex gap-5 items-center justify-end w-full">
-                <span className="dot dot-secondary"></span>
-                <p className="text-start font-semibold leading-5">N'ATTENDEZ <br /> PLUS</p>
-            </div>
-        </div>
-    );
+  return (
+    <div className="header-part my-20 px-4">
+      <div className="title-part block sm:flex flex-col gap-4 items-center">
+        <h1 className="text-4xl font-medium text-center">
+          FAIT PARTIE DES 3 MILLIONS QUI ONT CHANGÉ LEURS VIES
+        </h1>
+        <p className="text-lg text-center font-semibold mt-10">
+          Toi aussi trouves la raison de te réveiller le matin !
+        </p>
+        <div className="header-bg-img"></div>
+        <div className="header-underline"></div>
+      </div>
+    </div>
+  );
 }
 
 export default Header;
