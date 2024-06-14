@@ -15,7 +15,7 @@ function Hero() {
             ")",
         }}
       >
-        <div className="flex flex-col items-center justify-center px-4 sm:px-10 gap-6 sm:gap-10 w-full">
+        <div className="flex flex-col items-center justify-center mt-24 px-4 sm:px-10 gap-6 sm:gap-10 w-full">
           <div className="flex flex-col items-center leading-tight gap-3 sm:gap-5">
             <p className="text-white font-semibold text-3xl sm:text-4xl md:text-6xl drop-shadow-lg m-0">
               Marre de ton job ?
