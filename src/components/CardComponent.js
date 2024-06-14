@@ -1,6 +1,19 @@
-import React from "react";
+import React, { act, useEffect, useState } from "react";
+import data from "../data/data.json";
 
 function CardComponent() {
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex === 12 ? 1 : prevIndex + 1));
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <div className="card-part px-[1rem] sm:px-[2rem] grid grid-cols-12 gap-3 mt-32">
       <div className="title-part col-span-12 flex flex-col sm:flex-row items-center sm:items-start gap-[1rem] sm:gap-[3.5rem] relative px-[0rem] sm:px-[2rem]">
@@ -24,26 +37,40 @@ function CardComponent() {
         />
       </div>
       <div className="cart-content col-span-12 bg-white sm:bg-slate-50 rounded-xl p-[0rem] sm:p-[1.2rem] flex items-center gap-10 sm:gap-20 flex-col sm:flex-row">
-        <img
-          src={require("../images/card-image-1.png")}
-          alt="car-image"
-          className="w-[35rem] rounded-xl h-[30rem] sm:h-auto"
-        />
-        <div className="menus flex items-end justify-between w-full">
+        {data.map((item, index) => {
+          return (
+            item.index === activeIndex && (
+              <img
+                src={`${window.location.origin}/images/${item.image}`}
+                alt="card-image"
+                className="w-[35rem] rounded-xl h-[30rem] sm:h-auto"
+                key={index}
+              />
+            )
+          );
+        })}
+        <div className="menus flex flex-col sm:flex-row items-end sm:justify-between w-full">
           <ul className="flex flex-col gap-2.5 p-0">
-            <li className="font-bold text-sm text-indigo-600">PATISSIER</li>
-            <li className="font-normal text-sm text-slate-400">COIFFEUR</li>
-            <li className="font-normal text-sm text-slate-400">BARBER</li>
-            <li className="font-normal text-sm text-slate-400">JARDINIER</li>
-            <li className="font-normal text-sm text-slate-400">STYLISTE</li>
-            <li className="font-normal text-sm text-slate-400">CUISINIER</li>
-            <li className="font-normal text-sm text-slate-400">HORLOGER</li>
-            <li className="font-normal text-sm text-slate-400">DESIGNER</li>
-            <li className="font-normal text-sm text-slate-400">BOULANGER</li>
-            <li className="font-normal text-sm text-slate-400">Architecte</li>
-            <li className="font-normal text-sm text-slate-400">Médecin</li>
-            <li className="font-normal text-sm text-slate-400">Ingénieur</li>
+            {data.map((item, index) => (
+              <li
+                className={`cursor-pointer text-sm ${
+                  item.index === activeIndex
+                    ? "text-indigo-600 font-bold"
+                    : "text-slate-400 font-medium"
+                }`}
+                key={index}
+                onMouseOver={() => setActiveIndex(item.index)}
+              >
+                {item.name}
+              </li>
+            ))}
           </ul>
+          {data.map((item, index) => (
+            <h1 className="text-indigo-600 font-bold text-lg block sm:hidden mb-0">
+              {" "}
+              {item.index === activeIndex ? item.name : ""}{" "}
+            </h1>
+          ))}
           <button className="w-fit rounded-xl px-4 py-2 flex items-center gap-2 bg-black text-white">
             Trouve ton job{" "}
             <img

@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className="p-0 sm:px-6 hero-part sm:mx-6">
       <div
-        className="flex w-full bg-cover bg-center bg-no-repeat rounded-t-none rounded-3xl min-h-screen"
+        className="flex w-full bg-cover bg-center bg-no-repeat rounded-t-none rounded-3xl h-screen items-center justify-center"
         style={{
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(" +
@@ -15,19 +15,21 @@ function Hero() {
             ")",
         }}
       >
-        <div className="flex flex-col justify-center px-4 sm:px-10 gap-6 sm:gap-10 w-full">
-          <div className="flex flex-col items-start leading-tight gap-3 sm:gap-5">
+        <div className="flex flex-col items-center justify-center px-4 sm:px-10 gap-6 sm:gap-10 w-full">
+          <div className="flex flex-col items-center leading-tight gap-3 sm:gap-5">
             <p className="text-white font-semibold text-3xl sm:text-4xl md:text-6xl drop-shadow-lg m-0">
               Marre de ton job ?
             </p>
-            <p className="text-white font-medium text-base sm:text-lg drop-shadow-lg w-full sm:w-96 text-left">
-              Découvres ton prochain métier de rêve en t’inscrivant dès
-              maintenant
+            <p className="text-white font-medium text-base sm:text-lg drop-shadow-lg w-full text-center px-16 sm:px-32">
+              Sois le premier informé lorsque notre test pour connaitre ton
+              futur métier sera disponible. Inscrives-tu avec ton email pour ne
+              rien manquer !
             </p>
+
             <input
               type="text"
               placeholder="Adresse mail"
-              className="px-4 py-3 rounded-xl w-52 sm:w-72"
+              className="px-4 py-2 rounded-xl w-62 sm:w-72"
             />
             <button className="bg-white text-black flex items-center gap-3 rounded-xl px-5 py-2 font-medium">
               Inscris-toi à la waitinglist{" "}
@@ -38,17 +40,10 @@ function Hero() {
               />
             </button>
           </div>
-          <div className="explore-btn">
-            <button className="text-white text-sm sm:text-base px-4 sm:px-7 py-2 rounded-lg uppercase font-medium w-fit">#explore</button>
-          </div>
+          
         </div>
-        <img
-          src={require("../images/crown-image.png")}
-          alt="crown-image"
-          className="w-16 h-16 sm:w-32 sm:h-32 absolute top-20 right-10 sm:top-[4rem] sm:right-[27rem]"
-        />
+       
       </div>
-
 
       {/* <div
         className="flex sm:hidden bg-white p-0 h-screen bg-cover bg-center rounded-bottom-lg"
@@ -83,7 +78,7 @@ function Hero() {
           </a>
         </div>
       </div> */}
-    </div >
+    </div>
   );
 }
 

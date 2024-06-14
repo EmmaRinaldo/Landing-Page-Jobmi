@@ -11,8 +11,8 @@ function Card() {
             0000000
           </button>
         </div>
-        <button className="w-fit rounded-xl px-4 py-2 flex items-center gap-2 bg-black text-white absolute bottom-8 right-8">
-          Faire le test{" "}
+        <button className="w-fit rounded-xl px-4 py-2 flex items-center gap-2 bg-black text-white ms-auto me-5">
+          Faire le test
           <img
             src={require("../images/accordion-arrow.png")}
             alt="arrow-icon"
