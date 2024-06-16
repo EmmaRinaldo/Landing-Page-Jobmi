@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logoBlack from "../images/logo.png";
 import instagramIcon from "../images/instagram-header.svg";
-import facebookIcon from "../images/facebook-header.svg";
+import tiktokIcon from "../images/tiktok-header.svg";
 import linkedinIcon from "../images/linkedin-header.svg";
 
 function NavbarDesktop() {
@@ -42,7 +42,7 @@ function NavbarDesktop() {
           </a>
           <div className="social-links flex items-center gap-2 md:gap-4">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/jobmifr?igsh=MXQyczl6cHlka2s2bw=="
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -53,18 +53,18 @@ function NavbarDesktop() {
               />
             </a>
             <a
-              href="https://www.facebook.com"
+              href="https://www.tiktok.com/@jobmifr?_t=8n1bHZwV2fY&_r=1"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src={facebookIcon}
-                alt="Facebook"
+                src={tiktokIcon}
+                alt="TikTok"
                 className="w-5 h-5 md:w-4 md:h-4"
               />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/jobmipro/"
               target="_blank"
               rel="noopener noreferrer"
             >

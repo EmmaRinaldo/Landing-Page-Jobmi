@@ -1,6 +1,6 @@
 // src/components/Footer.js
 import React from "react";
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -22,15 +22,33 @@ function Footer() {
       <div className="col-span-12 sm:col-span-3">
         <h5 className="text-white font-semibold">SOCIAL MEDIA</h5>
         <ul className="mb-0 p-0 mt-10 flex items-center gap-4 social-menus">
-          <li className="text-white">
-            <FaInstagram className="text-2xl" />
-          </li>
-          <li className="text-white">
-            <FaFacebookF className="text-2xl" />
-          </li>
-          <li className="text-white">
-            <FaLinkedinIn className="text-2xl" />
-          </li>
+          <a
+            href="https://www.instagram.com/jobmifr?igsh=MXQyczl6cHlka2s2bw=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="text-white">
+              <FaInstagram className="text-2xl" />
+            </li>
+          </a>
+          <a
+            href="https://www.tiktok.com/@jobmifr?_t=8n1bHZwV2fY&_r=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="text-white">
+              <FaTiktok className="text-2xl" />
+            </li>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/jobmipro/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li className="text-white">
+              <FaLinkedinIn className="text-2xl" />
+            </li>
+          </a>
         </ul>
       </div>
       <div className="col-span-12 sm:col-span-3">

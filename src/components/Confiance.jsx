@@ -6,7 +6,7 @@ export default function Confiance() {
       <div className="col-span-12">
         <div className="title-part relative mb-12">
           <h1 className="text-3xl font-bold text-center">Tu ne nous fait pas confiance ?</h1>
-          <img src={require("../images/bg-purpule.png")} alt="" className="absolute top-[3rem] sm:top-[0.4rem] left-[6rem] sm:left-[46.5rem] w-44" />
+          <img src={require("../images/bg-surligne-purple.png")} alt="" className="absolute top-[3rem] sm:top-[0.4rem] left-[6rem] sm:left-[46.5rem] w-44" />
         </div>
       </div>
       <div className="col-span-12 sm:col-span-6">

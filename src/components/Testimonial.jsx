@@ -29,7 +29,7 @@ function Testimonial() {
             <div className="col-span-12">
                 <div className="title-part relative mb-7 sm:mb-12">
                     <h1 className="text-3xl font-bold flex items-center justify-center gap-3">Ils parlent de nous</h1>
-                    <img src={require("../images/bg-purpule.png")} alt="" className="w-32 absolute top-2 left-[3rem] sm:left-[35rem]" />
+                    <img src={require("../images/bg-surligne-purple.png")} alt="" className="w-32 absolute top-2 left-[3rem] sm:left-[35rem]" />
                 </div>
             </div>
             <div className="col-span-12">
