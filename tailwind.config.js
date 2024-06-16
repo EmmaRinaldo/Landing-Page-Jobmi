@@ -19,5 +19,7 @@ module.exports = {
       }
     },
   },
-  plugins: [require("rippleui")],
+  plugins: [
+    require("rippleui")
+  ],
 }

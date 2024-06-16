@@ -31,8 +31,9 @@ function Newsletter() {
         <div className="news-letter-part mx-[1rem] sm:mx-[2rem] px-10 sm:px-16 py-10 sm:py-16 grid grid-cols-12 mt-24 rounded-xl">
             <div className="col-span-12 sm:col-span-4">
                 <div className="new-letter-info flex flex-col gap-7 sm:gap-10">
-                    <h1 className='text-3xl text-white'>Encore un p’tit doute ?</h1>
-                    <p className='text-lg text-white w-full text-center sm:w-64'>Inscris-toi à notre newsletter pour ne rater aucune de nos actualités et de nos opportunités !</p>
+                    <h1 className='font-sans font-semibold text-3xl text-white'>Encore un p’tit<br></br> doute ?</h1>
+                    <p className='font-sans text-lg text-white w-full sm:w-64'>Inscris-toi à notre newsletter pour ne rater aucune de nos actualités et de <span className='font-semibold'>nos opportunités !</span></p>
+                    
                 </div>
             </div>
             <div className="col-span-12 sm:col-span-4">

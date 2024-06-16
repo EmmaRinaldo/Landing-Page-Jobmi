@@ -9,7 +9,7 @@ function Card() {
     <div className="card-part px-[1rem] sm:px-[2rem] grid grid-cols-12 gap-y-5 sm:gap-x-5 mt-32" id="test-section">
       <div className="img-box col-span-12 sm:col-span-5 relative">
         <img src={cardImage} alt="Photo d'une femme posée à son ordinateur en train de répondre à un test" />
-        <a href="https://jobmi.fr/test" className="w-fit rounded-xl px-4 py-2 flex items-center gap-2 bg-black text-white absolute bottom-4 right-4 sm:bottom-[10%] sm:right-[5%] md:bottom-[20%] md:right-[8%] no-underline font-sans font-semibold">
+        <a target="_blank" rel="noreferrer" href="https://jobmi.fr/test" className="w-fit rounded-xl px-4 py-2 flex items-center gap-2 bg-black text-white absolute bottom-4 right-4 sm:bottom-[10%] sm:right-[5%] md:bottom-[20%] md:right-[8%] no-underline font-sans font-semibold">
           Faire le test
           <img
             src={require("../images/accordion-arrow.png")}
@@ -43,7 +43,7 @@ function Card() {
               Ce test rapide t’aidera à identifier les
               métiers par rapport à ce que tu&nbsp;&nbsp;<span className="font-september font-normal text-[3rem] sm:text-[3.5rem] relative" style={{backgroundImage: `url(${kiffes})`,
                 backgroundRepeat: 'no-repeat',
-                backgroundPosition: '0 80%',
+                backgroundPosition: '0 90%',
 
               }}>
                   kiffes

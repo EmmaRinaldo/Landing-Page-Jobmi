@@ -218,9 +218,7 @@
     transform: rotate(135deg);
     margin-left: 10rem;
   }
-  .social-menus {
-    display: none;
-  }
+  
   .menus ul {
     display: none;
   }

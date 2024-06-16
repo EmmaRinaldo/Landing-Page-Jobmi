@@ -4,7 +4,7 @@ import bgUnderline from "../images/bg-underline-image.png"
 
 function Header() {
   return (
-    <div className="header-part my-15 px-4">
+    <div className="header-part my-10 px-4">
       <div className="title-part block sm:flex flex-col gap-4 items-center">
         <div className="relative text-center">
           <h2 className="text-4xl font-medium font-oddlini">

@@ -18,12 +18,12 @@ function CardComponent() {
   return (
     <div className="card-part px-[1rem] sm:px-[2rem] grid grid-cols-12 gap-3 mt-32" id="metier-section">
       <div className="title-part col-span-12 flex flex-col sm:flex-row items-center sm:items-start gap-[1rem] sm:gap-[3.5rem] relative px-[0rem] sm:px-[2rem]">
-        <h1 className="text-3xl font-bold font-sans w-56 flex flex-col items-end gap-2">
+        <h1 className="text-3xl font-bold font-sans w-56 flex flex-col items-start gap-2">
           Trouve le metier banger !{" "}
           <img
             src={require("../images/pour-la-vie-image.png")}
             alt=""
-            className="w-36"
+            className="w-36 left-0"
           />
         </h1>
         <p className="w-80 font-sans text-lg">
