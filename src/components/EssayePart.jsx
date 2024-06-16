@@ -31,7 +31,7 @@ function EssayePart() {
             <div className="col-span-12 sm:col-span-3 mt-1.5">
                 <div className="essay-box-content relative">
                     <div className="essay-img-box">
-                        <img src={require("../images/essay-img-1.png")} alt="" />
+                        <img src={require("../images/essay-img-2.png")} alt="" />
                     </div>
                     <img src={require("../images/essay-icon.png")} alt="" className='absolute top-10 right-10 w-7' />
                     <div className="essay-content absolute bottom-4 left-0 px-3">
@@ -43,7 +43,7 @@ function EssayePart() {
             <div className="col-span-12 sm:col-span-3 mt-1.5">
                 <div className="essay-box-content relative">
                     <div className="essay-img-box">
-                        <img src={require("../images/essay-img-1.png")} alt="" />
+                        <img src={require("../images/essay-img-3.png")} alt="" />
                     </div>
                     <img src={require("../images/essay-icon.png")} alt="" className='absolute top-10 right-10 w-7' />
                     <div className="essay-content absolute bottom-4 left-0 px-3">
