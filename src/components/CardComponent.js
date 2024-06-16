@@ -53,7 +53,7 @@ function CardComponent() {
           <ul className="flex flex-col gap-2.5 p-0">
             {data.map((item, index) => (
               <li
-                className={`cursor-pointer text-sm ${
+                className={`cursor-pointer text-sm uppercase ${
                   item.index === activeIndex
                     ? "text-indigo-600 font-bold"
                     : "text-slate-400 font-medium"
