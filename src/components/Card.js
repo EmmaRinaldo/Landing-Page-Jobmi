@@ -1,24 +1,22 @@
 // src/components/Card.js
 import React from "react";
+import cardImage from "../images/card-img-test.svg"
+import theMetier from "../images/soulignage-the-metier.svg"
+import kiffes from "../images/soulignage-kiffes.svg"
 
 function Card() {
   return (
-    <div className="card-part px-[1rem] sm:px-[2rem] grid grid-cols-12 gap-y-5 sm:gap-x-5 mt-32">
+    <div className="card-part px-[1rem] sm:px-[2rem] grid grid-cols-12 gap-y-5 sm:gap-x-5 mt-32" id="test-section">
       <div className="img-box col-span-12 sm:col-span-5 relative">
-        <img src={require("../images/card-image.png")} alt="card-image" />
-        <div className="btn-groups">
-          <button className="purple-btn text-white text-sm px-7 py-2 rounded-lg uppercase font-medium w-fit relative">
-            0000000
-          </button>
-        </div>
-        <button className="w-fit rounded-xl px-4 py-2 flex items-center gap-2 bg-black text-white ms-auto me-5">
+        <img src={cardImage} alt="Photo d'une femme posée à son ordinateur en train de répondre à un test" />
+        <a href="https://jobmi.fr/test" className="w-fit rounded-xl px-4 py-2 flex items-center gap-2 bg-black text-white absolute bottom-4 right-4 sm:bottom-[10%] sm:right-[5%] md:bottom-[20%] md:right-[8%] no-underline font-sans font-semibold">
           Faire le test
           <img
             src={require("../images/accordion-arrow.png")}
             alt="arrow-icon"
             className="w-7"
           />
-        </button>
+        </a>
       </div>
       <div className="col-span-12 sm:col-span-7">
         <div className="card-content rounded-xl h-full relative pb-4">
@@ -28,24 +26,32 @@ function Card() {
             className="w-24 absolute top-8 sm:top-14"
           />
           <div className="card-details-content pt-[9rem] sm:pt-[11rem] px-[1.5rem] sm:px-[2rem] m-0">
-            <h1 className="text-2xl font-bold w-full sm:w-96">
-              Réponds à 5 questions simples pour découvrir.
-            </h1>
-            <p className="text-lg w-72 sm:w-96 mb-0 mt-28 sm:mt-32">
-              Ce test rapide t’aidera à identifier les métiers par rapport à ce
-              que tu faire et tes compétences.
+            <div className="relative">
+              <h2 className="text-2xl w-full sm:w-96 font-sans font-semibold">
+                Réponds à 5 <br></br>questions simples <br></br>pour découvrir&nbsp;&nbsp;
+                <span className="font-september font-normal text-violet text-[4.2rem] sm:text-[5rem] relative" style={{backgroundImage: `url(${theMetier})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: '0 80%',
+
+              }}>
+                  "The metier"
+                </span>
+                
+              </h2>
+            </div>
+            <p className="text-lg w-72 sm:w-96 mb-0 mt-28 sm:mt-32 font-sans">
+              Ce test rapide t’aidera à identifier les
+              métiers par rapport à ce que tu&nbsp;&nbsp;<span className="font-september font-normal text-[3rem] sm:text-[3.5rem] relative" style={{backgroundImage: `url(${kiffes})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: '0 80%',
+
+              }}>
+                  kiffes
+                </span>
+                &nbsp;&nbsp;faire et tes compétences.
             </p>
           </div>
-          <img
-            src={require("../images/matter-text-img.png")}
-            alt="matter-img"
-            className="w-40 absolute top-[12rem] sm:top-[11.5rem] left-[1.5rem] sm:left-[14.5rem]"
-          />
-          <img
-            src={require("../images/kiffes-img.png")}
-            alt="kiffes-img"
-            className="absolute top-[21.3rem] sm:top-[24.3rem] left-[19.4rem] sm:left-[20.4rem] h-10"
-          />
+          
         </div>
       </div>
     </div>

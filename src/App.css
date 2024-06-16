@@ -37,12 +37,18 @@
 
 /* Header part */
 .header-part {
-  background-image: url("./images/banner-img-1.png");
+  background-image: url("./images/banner-img-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
+}
+
+@media (min-width: 640px) {
+  .header-part {
+    height: 55vh; /* Pour les écrans moyens et grands, la hauteur est de 55vh */
+  }
 }
 
 .header-part .title-part {
@@ -221,6 +227,7 @@
 }
 
 @media (max-width: 360px) {
+
   .hero-part .explore-btn button {
     position: absolute;
     top: -140px;
@@ -238,3 +245,8 @@
     right: 0.7rem;
   }
 }
+
+
+
+
+

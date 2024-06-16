@@ -18,6 +18,7 @@ function Newsletter() {
             .then(response => response.json())
             .then(data => {
                 setMessage(data.message);
+                setEmail('');
             })
             .catch(error => {
                 console.error('Erreur:', error);
@@ -40,15 +41,22 @@ function Newsletter() {
                 </div>
             </div>
             <div className="col-span-12 sm:col-span-4">
-                <div className="input-field relative mt-[6rem] sm:mt-[8rem]">
+                <form className="input-field relative mt-[6rem] sm:mt-[8rem]" onSubmit={handleSubmit}>
                     <input
                         type="text"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         placeholder="Adresse mail"
-                        className="px-4 py-3 rounded-xl w-full text-xl"
+                        className="px-4 py-3 rounded-xl w-full text-xl bg-white"
                     />
-                    <button className='absolute top-3 right-5'><img src={require("../images/new-letter-arrow-icon.png")} alt="" /></button>
-                </div>
+                    <button type="submit" className='absolute top-3 right-5'><img src={require("../images/new-letter-arrow-icon.png")} alt="" /></button>
+                </form>
             </div>
+            {message && (
+                <div className="col-span-12 text-center mt-4">
+                    <p className='text-white'>{message}</p>
+                </div>
+            )}
         </div>
     );
 }

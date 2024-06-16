@@ -1,5 +1,6 @@
 import React, { act, useEffect, useState } from "react";
 import data from "../data/data.json";
+import rapidement from "../images/soulignage-rapidement.svg";
 
 function CardComponent() {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -15,9 +16,9 @@ function CardComponent() {
   }, []);
 
   return (
-    <div className="card-part px-[1rem] sm:px-[2rem] grid grid-cols-12 gap-3 mt-32">
+    <div className="card-part px-[1rem] sm:px-[2rem] grid grid-cols-12 gap-3 mt-32" id="metier-section">
       <div className="title-part col-span-12 flex flex-col sm:flex-row items-center sm:items-start gap-[1rem] sm:gap-[3.5rem] relative px-[0rem] sm:px-[2rem]">
-        <h1 className="text-3xl font-bold w-56 flex flex-col items-end gap-2">
+        <h1 className="text-3xl font-bold font-sans w-56 flex flex-col items-end gap-2">
           Trouve le metier banger !{" "}
           <img
             src={require("../images/pour-la-vie-image.png")}
@@ -25,25 +26,26 @@ function CardComponent() {
             className="w-36"
           />
         </h1>
-        <p className="w-80">
+        <p className="w-80 font-sans text-lg">
           Nous te mettrons en avant les métiers qui te fit parfaitement, mais
           aussi les jobs en forte demande, afin de maximiser tes chances de
-          trouver un emploi
+          trouver un emploi&nbsp;&nbsp;<span className="font-september font-normal text-[3rem] sm:text-[3.5rem] relative" style={{backgroundImage: `url(${rapidement})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: '0 80%',
+
+              }}>
+                  rapidement
+                </span>
         </p>
-        <img
-          src={require("../images/rapidement-image.png")}
-          alt=""
-          className="absolute top-[12.3rem] sm:top-14 left-[10rem] sm:left-[28rem] w-20"
-        />
       </div>
-      <div className="cart-content col-span-12 bg-white sm:bg-slate-50 rounded-xl p-[0rem] sm:p-[1.2rem] flex items-center gap-10 sm:gap-20 flex-col sm:flex-row">
+      <div className="cart-content col-span-12 sm:bg-slate-50 rounded-xl p-[0rem] sm:p-[1.2rem] flex items-center gap-10 sm:gap-20 flex-col sm:flex-row md:px-8">
         {data.map((item, index) => {
           return (
             item.index === activeIndex && (
               <img
                 src={`${window.location.origin}/images/${item.image}`}
                 alt="card-image"
-                className="w-[35rem] rounded-xl h-[30rem] sm:h-auto"
+                className="w-full sm:w-[35rem] rounded-xl h-auto"
                 key={index}
               />
             )
@@ -53,9 +55,9 @@ function CardComponent() {
           <ul className="flex flex-col gap-2.5 p-0">
             {data.map((item, index) => (
               <li
-                className={`cursor-pointer text-sm uppercase ${
+                className={`cursor-pointer text-sm font-sans uppercase ${
                   item.index === activeIndex
-                    ? "text-indigo-600 font-bold"
+                    ? "text-violet font-bold"
                     : "text-slate-400 font-medium"
                 }`}
                 key={index}
@@ -71,7 +73,7 @@ function CardComponent() {
               {item.index === activeIndex ? item.name : ""}{" "}
             </h1>
           ))}
-          <button className="w-fit rounded-xl px-4 py-2 flex items-center gap-2 bg-black text-white">
+          <button className="w-fit rounded-xl px-4 py-2 flex items-center gap-2 bg-black text-white font-sans font-semibold">
             Trouve ton job{" "}
             <img
               src={require("../images/accordion-arrow.png")}
