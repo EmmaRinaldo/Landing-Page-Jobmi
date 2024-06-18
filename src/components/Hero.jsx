@@ -32,7 +32,7 @@ function Hero() {
             Découvres ton prochain métier de rêve en <br/>t’inscrivant dès maintenant
             </p>
           
-            <a target="_blank" rel="noreferrer" href="https://626063d8.sibforms.com/serve/MUIFAEtkyLp2CKWZ3dK7tZAaV913c-SP0e_IP8fVFhikgJbXeSQSKrIBS_d-L0WUIziK7BVpRA-4qmg1RW6kU-7j7rKYnwCGuIOrgcqaEtKr7d060ZPGT22jUjuO2vZhW1-fOtMV78j2rBU-04_F8pj7pPLi_oHLjV-8Gns1ljpjWJRXuuVT2LVH3B1OBRwulcezAhR5VOqWQDnn" className="bg-white text-black flex items-center gap-3 rounded-xl px-5 py-3 font-medium font-inter no-underline">
+            <a target="_blank" rel="noreferrer" href="https://626063d8.sibforms.com/serve/MUIFACI_ugihEQiP7m7SmyLz7QszuC5wEK0W_nn2cHLbezW92oq3Gi_M7-5mIHV3oA9bk8VpaPa5q5OmsC4xxwhAAIDAz5LafA4Of6WYGOVAYgPggEk5SH6YYlarS5QAKTm_pucc1dXASOy6scm8cBdqdnUuW0Ms3FUJBfgzGv9XucQ_FwwJIFFVrEDqaJu_1batPvIPyrYuxn4K" className="bg-white text-black flex items-center gap-3 rounded-xl px-5 py-3 font-medium font-inter no-underline">
                 Inscris-toi à la waitinglist
                 <img
                   src={require("../images/arrow-icon.png")}

@@ -47,7 +47,7 @@ function AccordionComponent() {
         <a href="#essaye-section" className="bg-[#F8F8F8] rounded-xl px-4 py-2 text-black font-semibold flex justify-between items-center no-underline">
           Essaye avant de t’engager <img src={require("../images/accordion-down-icon.png")} alt="arrow icon" className="w-6 h-6" />
         </a>
-        <a target="_blank" href="https://626063d8.sibforms.com/serve/MUIFAEtkyLp2CKWZ3dK7tZAaV913c-SP0e_IP8fVFhikgJbXeSQSKrIBS_d-L0WUIziK7BVpRA-4qmg1RW6kU-7j7rKYnwCGuIOrgcqaEtKr7d060ZPGT22jUjuO2vZhW1-fOtMV78j2rBU-04_F8pj7pPLi_oHLjV-8Gns1ljpjWJRXuuVT2LVH3B1OBRwulcezAhR5VOqWQDnn" className="no-underline">
+        <a target="_blank" href="https://626063d8.sibforms.com/serve/MUIFACI_ugihEQiP7m7SmyLz7QszuC5wEK0W_nn2cHLbezW92oq3Gi_M7-5mIHV3oA9bk8VpaPa5q5OmsC4xxwhAAIDAz5LafA4Of6WYGOVAYgPggEk5SH6YYlarS5QAKTm_pucc1dXASOy6scm8cBdqdnUuW0Ms3FUJBfgzGv9XucQ_FwwJIFFVrEDqaJu_1batPvIPyrYuxn4K" className="no-underline">
           <button className='accordion-btn justify-between w-fit rounded-xl px-4 py-2 flex items-center gap-2 text-white mt-4 sm:mt-5 font-semibold'>Inscris-toi à la waitinglist <img src={require("../images/accordion-arrow.png")} alt="arrow-icon" className='w-7' /></button>
         </a>
       </div>
