@@ -21,6 +21,10 @@
   position: relative;
 }
 
+.navbar-part {
+  box-shadow: none; /* Ajoutez cette ligne pour supprimer l'ombre */
+}
+
 .hero-part .explore-btn button::before,
 .card-part .purple-btn::before {
   position: absolute;
