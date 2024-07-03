@@ -96,6 +96,9 @@ function Footer() {
 
                 <h5 className="font-bold">Droit Applicable</h5>
                 <p>Ces mentions légales sont régies par la loi française. Les tribunaux français sont compétents en cas de litige.</p>
+
+                <h5 class="font-bold">Projet Scolaire</h5>
+                <p>Ce site a été réalisé dans le cadre d'un projet scolaire et ne doit pas être considéré comme un site officiel.</p>
               </div>
             </div>
           </div>
