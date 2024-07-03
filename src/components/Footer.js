@@ -103,6 +103,9 @@ function Footer() {
             </div>
           </div>
         )}
+        <p>
+          @DCParis
+        </p>
       </div>
       <div className="col-span-9 sm:col-span-3">
         <h5 className="text-white font-inter font-semibold">REJOINDRE</h5>
