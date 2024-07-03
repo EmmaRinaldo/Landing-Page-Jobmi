@@ -24,7 +24,7 @@ function NavbarDesktop() {
 
   return (
     <div
-      className={`navbar-part flex items-center justify-between fixed top-0 left-0 right-0   z-10 transition-all duration-300 ${
+      className={`navbar-part flex items-center justify-between fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${
         scrolled ? "py-1 md:py-2" : "py-2 md:py-3"
       }`}
       style={{ backgroundColor: "#F3F3F3" }}
